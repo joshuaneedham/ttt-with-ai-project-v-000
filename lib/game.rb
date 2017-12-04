@@ -32,9 +32,5 @@ class Game
   def draw?
   end
 
-  def winner
-  end
-
-  def
 
 end
