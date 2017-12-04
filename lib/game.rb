@@ -17,11 +17,24 @@ class Game
     @board = board
   end
 
+  def current_player
+    @board.turn_count % 2 == 0 ? @player_1 : @player_2
+  end
+
   def over?
     won? || draw?
   end
 
   def won?
+
   end
+
+  def draw?
+  end
+
+  def winner
+  end
+
+  def
 
 end
