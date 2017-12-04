@@ -5,7 +5,7 @@ class Game
   [3,4,5],
   [6,7,8],
   [0,4,8],
-  [2,4,6],
+  [6,4,2],
   [0,3,6],
   [1,4,7],
   [2,5,8]
@@ -20,7 +20,7 @@ class Game
   def current_player
     @board.turn_count % 2 == 0 ? @player_1 : @player_2
   end
-  
+
   def winner
     if winning_combo = won?
       @winner = @board.cells[winning_combo.first]
