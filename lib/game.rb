@@ -17,6 +17,10 @@ class Game
     @board = board
   end
 
+  def over?
+    won? || draw?
+  end
+
   def current_player
     @board.turn_count % 2 == 0 ? @player_1 : @player_2
   end
@@ -40,10 +44,6 @@ class Game
       @board.display
       puts "\n\n"
     end
-  end
-
-  def over?
-    won? || draw?
   end
 
   def won?
